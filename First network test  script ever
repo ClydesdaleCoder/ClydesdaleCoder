@@ -1,0 +1,29 @@
+#!/bin/bash
+
+google= '8.8.8.8' #My practice implementing variables
+defgate= 'gateway address' 
+
+# Practice with handling ping  and using echo to test 
+ping -c 1 $google  #My practice confinguring variables of ping
+
+if[ $? -eq 0]
+
+then echo "Google reached"
+else echo "Can't reach Google"
+fi
+
+ping -c 1 $defgate  #My practice confinguring variables of ping
+
+if[ $? -eq 0]
+
+then echo "Default Gate reached"
+else echo "Can't reach Default Gate"
+fi
+
+traceroute -T "My phone IP"  #I wanted to test how I could sping my phone. 
+
+# Practice with seeing how implementing commands into Bash could work
+netstat
+arp -a 
+
+done
